@@ -24,7 +24,7 @@ def index():
     if r.status_code == 200:
         #load the GIFs using the urls for the smaller GIF sizes
         top_10gifs = json.loads(r.content)
-        # pprint(top_10gifs)
+        pprint(top_10gifs)
         
     else:
         top_10gifs = None
@@ -39,6 +39,13 @@ def index():
     # TODO: Render the 'index.html' template, passing the gifs as a named parameter
 
     return render_template("index.html")
+
+
+@app.route('/gifs')
+def show_gifs():
+    print("Hi gifs")
+
+
 
 
 if __name__ == "__main__": #__name__ is main. But if we import this somewhere else, then the name will be the name of our module

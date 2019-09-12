@@ -11,10 +11,10 @@ def index():
     # TODO: Extract query term from url
 
     # TODO: Make 'params' dict with query term and API key
-params = {
-    "q": query_term,
-    "Key": "18F7OZJBE0WJ"
-}
+    params = {
+        "q": query_term,
+        "Key": "18F7OZJBE0WJ"
+        }
     # TODO: Make an API call to Tenor using the 'requests' library
 r = requests.get(
     'https://tenor.com/gifapi/documentation',

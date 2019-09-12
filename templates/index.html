@@ -10,12 +10,15 @@
 <form action='/gifs'>
     <p>
         Search GIFs
-        <input type="text"placeholder="Search.."><!-- creates a search bar -->
+        <input type="text"placeholder="Search GIFs.."><!-- creates a search bar -->
         <button type="submit">Search</button> <!-- creates a button called Search -->
     </p>
 </form>
 <!-- TODO: Make a for loop to loop over GIFs passed in from the server -->
 
 <!-- TODO: For each gif, include the 'gif.html' template to display it -->
+{% for gifs in top_10gifs %}
+    {% include 'gif.html' %}
+{% endfor %}
 
 {% endblock %}

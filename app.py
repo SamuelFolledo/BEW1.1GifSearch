@@ -14,9 +14,9 @@ def index():
     params = {
         "q": query_term,
         "Key": "18F7OZJBE0WJ"
-        }
+    }
     # TODO: Make an API call to Tenor using the 'requests' library
-r = requests.get(
+    r = requests.get(
     'https://tenor.com/gifapi/documentation',
     params=params)
     # TODO: Get the first 10 results from the search results

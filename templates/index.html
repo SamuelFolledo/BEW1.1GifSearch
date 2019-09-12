@@ -1,6 +1,4 @@
 <!-- TODO: Extend 'base.html' and put content into a block 'body' to match -->
-{% extends 'base.html' %}
-
 {% block title %}
     Gif Search
 {% endblock %}
@@ -10,15 +8,8 @@
     the search term to the query string -->
 
 <form action='/gif'>
-    <p> <!--CSS styling for the Page title-->
+    <p>
         Search GIFs
-        <input [type=text] {
-            padding: 20px;
-            font-size: 17px;
-            float: middle;
-            width: 70%;
-            background: #FFFF00;
-        }/>
     </p>
     <button type="submit">Search</button> <!-- creates a button called Search -->
 

@@ -24,6 +24,6 @@ r = requests.get(
     # TODO: Render the 'index.html' template, passing the gifs as a named parameter
 
     return render_template("index.html")
-
+#added comment
 if __name__ == "__main__": #__name__ is main. But if we import this somewhere else, then the name will be the name of our module
     app.run(debug=True) #This conditional is only true if we run this script directly

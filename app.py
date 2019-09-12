@@ -23,13 +23,17 @@ def index():
 
     if r.status_code == 200:
         #load the GIFs using the urls for the smaller GIF sizes
-        top_10gifs = json.loads(r.content)
-        pprint(top_10gifs)
+        gif_json = r.json()
+        gif_str = gif_json["results"][0]["media"][0]["mediumgif"]["url"]
+
+
+        
+        pprint(gif_str)
         
     else:
-        top_10gifs = None
+        gif_str = None
 
-
+    return render_template('index.html', gif_str = gif_str)
 
     # TODO: Make an API call to Tenor using the 'requests' library
 
@@ -38,7 +42,6 @@ def index():
 
     # TODO: Render the 'index.html' template, passing the gifs as a named parameter
 
-    return render_template("index.html")
 
 
 @app.route('/gifs')

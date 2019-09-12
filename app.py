@@ -24,7 +24,7 @@ def index():
     if r.status_code == 200:
         #load the GIFs using the urls for the smaller GIF sizes
         top_10gifs = json.loads(r.content)
-        pprint(top_10gifs)
+        # pprint(top_10gifs)
         
     else:
         top_10gifs = None

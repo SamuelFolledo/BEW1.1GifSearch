@@ -7,7 +7,7 @@
 <!-- TODO: Make an HTML form containing a search box and a submit button to add
     the search term to the query string -->
 
-<form action='/gifs'>
+<form action='/gifs'> <!--allows for the HTML frm to be created-->
     <p>
         Search GIFs
         <input type="text"placeholder="Search GIFs.."><!-- creates a search bar -->
@@ -20,6 +20,6 @@
 <!-- {% for gifs in top_10gifs %}
     {% include 'gif.html' %}
 {% endfor %} -->
-<img src="{{gif_str}}" alt="OKOKKOKOKOK">
+<img src="{{gif_str}}" alt="OKOKKOKOKOK"> <!--shows the gif image-->
 
 {% endblock %}

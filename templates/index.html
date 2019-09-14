@@ -1,5 +1,5 @@
 <!-- TODO: Extend 'base.html' and put content into a block 'body' to match -->
-
+<!--{% extends 'base.html' %}--> 
 <link rel="stylesheet"href="{{ url_for('static',filename='style.css') }}">
 {% block content %}
 <!-- TODO: Make an HTML form containing a search box and a submit button to add
@@ -11,14 +11,15 @@
     </h1>
     <p>
         Search GIFs
-        <input type="text"placeholder="Search GIFs.."><!-- creates a search bar -->
-        <button type="submit">Search</button> <!-- creates a button called Search -->
-    </p>
+    </p>  
+    <input name ="query" type="query"placeholder="Search GIFs.."><!-- creates a search bar -->
+    <button type="submit">Search</button> <!-- creates a button called Search -->
+
 </form>
 <!-- TODO: Make a for loop to loop over GIFs passed in from the server -->
 
 <!-- TODO: For each gif, include the 'gif.html' template to display it -->
-<!-- {% for gifs in top_10gifs %}
+<!-- {% for gifs in gifs %}
     {% include 'gif.html' %}
 {% endfor %} -->
 <img src="{{gif_str}}" alt="OKOKKOKOKOK"> <!--shows the gif image-->

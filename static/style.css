@@ -6,6 +6,8 @@ h1 {
     color: purple;
 }
 p {
-    color: salmon
+    color: salmon;
+    font-family: Arial, Helvetica, sans-serif 
+
 }
 </style>

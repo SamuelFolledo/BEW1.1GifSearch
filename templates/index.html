@@ -1,13 +1,14 @@
 <!-- TODO: Extend 'base.html' and put content into a block 'body' to match -->
-{% block title %}
-    GIF Search <!-- creates a title -->
-{% endblock %}
+
 <link rel="stylesheet"href="{{ url_for('static',filename='style.css') }}">
 {% block content %}
 <!-- TODO: Make an HTML form containing a search box and a submit button to add
     the search term to the query string -->
 
-<form action='/gifs'> <!--allows for the HTML frm to be created-->
+<form action='/gifs'> <!--allows for the HTML form to be created-->
+    <h1><!--title for the GIF Search-->
+        GIF Search
+    </h1>
     <p>
         Search GIFs
         <input type="text"placeholder="Search GIFs.."><!-- creates a search bar -->

@@ -1,26 +1,29 @@
+/*CSS styling for the page background*/
 body {
-    background-color: greenyellow;
-    margin: 0;
-    padding: 0;
+    background-color: greenyellow;/*background color*/
+    margin: 0;/*how big the body is*/
+    padding: 0;/*how big the body is*/
 }
+/*CSS styling for the title text*/
 h1 {
-    color: purple;
-    font-family: 'Times New Roman', Times, serif;
-    text-align: center;
+    color: purple;/*title text color*/
+    font-family: 'Times New Roman', Times, serif;/**/
+    text-align: center;/*position of the title on the page*/
 }
+/*CSS styling for the printed text "GIF Search*/
 p {
-    color: darkred;
-    font-family: 'Times New Roman', Times, serif;
-    padding: 25px;
+    color: darkred;/*text color*/
+    font-family: 'Times New Roman', Times, serif;/*text font*/
+    text-align: left;/*positon of the "GIF search" text on the page*/
 }
+/*CSS styling for the search box*/
 .box{
-    background-image: blue;
-    padding: 30px, 30px;
-    text-align: center;
+    background-image: blue;/*search box background color*/
+    text-align: left;/*position of search box on the page*/
 }
+/*CSS styling for the search button*/
 .button{
-    color: seagreen;
-    padding: 20px, 20px;
-    text-align: center;
+    color: seagreen;/*search button background color*/
+    text-align: left;/*position of the search button on the page*/
 
 }

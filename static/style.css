@@ -25,5 +25,6 @@ p {
 .button{
     color: seagreen;/*search button background color*/
     text-align: center;/*position of the search button on the page*/
+    cursor: pointer;/*cursor changes how it looks when it is hovering over the button*/
 
 }

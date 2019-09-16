@@ -25,7 +25,7 @@
     {% include 'gif.html' %}
 {% endfor %}
 <img src="{{gif_str}}" alt="OKOKKOKOKOK"> <!--shows the gif image-->
-{% if gifs != query %} <!--if the gifs aren't in search query, print taht it can' be shown and to try another search.-->
+{% if gifs != query %} <!--if the gifs aren't in search query, prints that it can' be shown and to try another search.-->
     <h1>No GIFs could be found. Try another search query.</h1>
 {% endif %}
 {% endblock %}

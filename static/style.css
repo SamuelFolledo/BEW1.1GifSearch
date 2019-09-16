@@ -11,17 +11,16 @@ h1 {
 p {
     color: darkred;
     font-family: 'Times New Roman', Times, serif;
+    padding: 25px;
 }
-.search-box{
+.box{
     background-image: blue;
-    height: 20px;
-    left: 50%;
-    top: 15%;
-    padding: 70px;
+    padding: 30px, 30px;
+    text-align: center;
 }
-.search-button{
+.button{
     color: seagreen;
-    float: right;
-    width: 70px;
-    height: 70px;
+    padding: 20px, 20px;
+    text-align: center;
+
 }

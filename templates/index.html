@@ -1,13 +1,16 @@
 <!-- TODO: Extend 'base.html' and put content into a block 'body' to match -->
+
 {% block title %}
 <h1><!--title for the GIF Search-->
     GIF Search
 </h1>
 {% endblock %}
+
 {% block content %}
+<link rel="stylesheet"href="{{ url_for('static',filename='style.css') }}">
 <!-- TODO: Make an HTML form containing a search box and a submit button to add
     the search term to the query string -->
-    <link rel="stylesheet"href="{{ url_for('static',filename='style.css') }}">
+
 <form action='/gifs'> <!--allows for the HTML form to be created-->
     <p>
         Search GIFs
@@ -19,9 +22,11 @@
 <!-- TODO: Make a for loop to loop over GIFs passed in from the server -->
 
 <!-- TODO: For each gif, include the 'gif.html' template to display it -->
-    {% for gifs in gifs %}
-        {% include 'gif.html' %}
-    {% endfor %}
+{% for gifs in gifs %}
+    {% include 'gif.html' %}
+{% endfor %}
 <img src="{{gif_str}}" alt="OKOKKOKOKOK"> <!--shows the gif image-->
-
+{% if gifs|length == 0 %}
+    <h1>No GIFs could be found.</h1>
+{% endif %}
 {% endblock %}

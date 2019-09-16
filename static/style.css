@@ -7,7 +7,6 @@ h1 {
     color: purple;
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
-
 }
 p {
     color: darkred;
@@ -19,13 +18,10 @@ p {
     left: 50%;
     top: 15%;
     padding: 70px;
-
 }
 .search-button{
     color: seagreen;
     float: right;
     width: 70px;
     height: 70px;
-
-
 }

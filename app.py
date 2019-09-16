@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request
 import requests
 import json
-from pprint import pprint #pretty print json
+#from pprint import pprint #pretty print json
 
 app = Flask(__name__)
 
@@ -28,7 +28,7 @@ def index():
 
 
         
-        pprint(gif_str)
+        #pprint(gif_str)
         
     else:
         gif_str = None
@@ -44,9 +44,9 @@ def index():
 
 
 
-@app.route('/gifs')
-def show_gifs():
-    print("Hi gifs")
+#@app.route('/gifs')
+#def show_gifs():
+    #print("Hi gifs")
 
 
 

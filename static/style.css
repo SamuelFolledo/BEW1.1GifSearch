@@ -14,16 +14,16 @@ h1 {
 p {
     color: darkred;/*text color*/
     font-family: 'Times New Roman', Times, serif;/*text font*/
-    text-align: left;/*positon of the "GIF search" text on the page*/
+    text-align: center;/*positon of the "GIF search" text on the page*/
 }
 /*CSS styling for the search box*/
 .box{
     background-image: blue;/*search box background color*/
-    text-align: left;/*position of search box on the page*/
+    text-align: center;/*position of search box on the page*/
 }
 /*CSS styling for the search button*/
 .button{
     color: seagreen;/*search button background color*/
-    text-align: left;/*position of the search button on the page*/
+    text-align: center;/*position of the search button on the page*/
 
 }

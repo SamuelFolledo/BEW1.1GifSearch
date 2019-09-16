@@ -21,7 +21,7 @@
 <!-- TODO: Make a for loop to loop over GIFs passed in from the server -->
 
 <!-- TODO: For each gif, include the 'gif.html' template to display it -->
-{% for gifs in gifs %}
+{% for gif in gifs %}<!--for statement to display gifs-->
     {% include 'gif.html' %}
 {% endfor %}
 <img src="{{gif_str}}" alt="OKOKKOKOKOK"> <!--shows the gif image-->

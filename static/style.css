@@ -1,26 +1,31 @@
 body {
-    background-color: green;
+    background-color: greenyellow;
+    margin: 0;
+    padding: 0;
 }
 h1 {
     color: purple;
-    font-family: 'Times New Roman', Times, serif
+    font-family: 'Times New Roman', Times, serif;
     text-align: center;
+
 }
 p {
-    color: salmon;
-    font-family: 'Times New Roman', Times, serif 
+    color: darkred;
+    font-family: 'Times New Roman', Times, serif;
 }
 .search-box{
     background-image: blue;
     height: 20px;
-    padding: 1em;
+    left: 50%;
+    top: 15%;
+    padding: 70px;
 
 }
 .search-button{
-    color:
-    float:
-    width:
-    height:
+    color: seagreen;
+    float: right;
+    width: 70px;
+    height: 70px;
 
 
 }

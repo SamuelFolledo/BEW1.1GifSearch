@@ -2,7 +2,7 @@ from flask import Flask, render_template, request
 import requests
 import json
 from pprint import pprint #pretty print json
-5
+
 app = Flask(__name__)
 
 @app.route("/") #Home Page #ROUTES are what we type in the browser into browser to go to different pages. We create these using ROUTE DECORATORS, which is a way to add additional functionalities to existing functions. This route decorator will handle all of the complicated backend stuff and simply allow us to write a function that returns the information that will be shown in our website

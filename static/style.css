@@ -1,8 +1,11 @@
 /*CSS styling for the page background*/
 body {
-    background-color: greenyellow;/*background color*/
-    margin: 0;/*how big the body is*/
+    background:#333333;/*background color*/
+    margin: auto;/*how big the body is*/
     padding: 0;/*how big the body is*/
+    width: 100%;
+    height: 100%;
+    
 }
 /*CSS styling for the title text*/
 h1 {

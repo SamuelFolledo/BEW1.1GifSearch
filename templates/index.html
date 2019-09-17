@@ -1,46 +1,52 @@
 <!-- TODO: Extend 'base.html' and put content into a block 'body' to match -->
 
 {% block title %}
+
 <h1><!--title for the GIF Search-->
+    <head>
+        <link rel = "stylesheet" href = "/static/style.css">
+    </head>
     GIF Search
 </h1>
 {% endblock %}
 
 {% block content %}
-<link rel="stylesheet"href="{{ url_for('static',filename='style.css') }}">
-<!-- TODO: Make an HTML form containing a search box and a submit button to add
-    the search term to the query string -->
-<form action='/'> <!--allows for the HTML form to be created--> 
-    <p>
-        Search how many GIFs?
-    <select name="search_limit"> <!-- drop down called "limit" -->
-        <option value=1>1</option> <!-- left 1 is the actual data that will get passed, and 1 is what gets displayed -->
-        <option value=2>2</option>
-        <option value=3>3</option>
-        <option value=4>4</option>
-        <option value=5>5</option>
-        <option value=6>6</option>
-        <option value=7>7</option>
-        <option value=8>8</option>
-        <option value=9>9</option>
-        <option value=10 selected = "selected" >10</option> <!-- default selected is 10 -->
-    </select>
-    </p>  
+<body>
+    <!-- TODO: Make an HTML form containing a search box and a submit button to add
+        the search term to the query string -->
+    <form action='/'> <!--allows for the HTML form to be created--> 
+        <p>
+            Search how many GIFs?
+        <select name="search_limit"> <!-- drop down called "limit" -->
+            <option value=1>1</option> <!-- left 1 is the actual data that will get passed, and 1 is what gets displayed -->
+            <option value=2>2</option>
+            <option value=3>3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+            <option value=6>6</option>
+            <option value=7>7</option>
+            <option value=8>8</option>
+            <option value=9>9</option>
+            <option value=10 selected = "selected" >10</option> <!-- default selected is 10 -->
+        </select>
+        </p>  
 
-    <input name ="search_result" type="query"placeholder="Search GIFs.."><!-- creates a search bar -->
-    <button type="submit">Search</button> <!-- creates a button called Search -->
+        <input name ="search_result" value = "{{search_result}}" type="query"placeholder="Search GIFs.."><!-- creates a search bar -->
+        <button type="submit">Search</button> <!-- creates a button called Search -->
+    </form>
 
     
-
-</form>
+    {% if gif_list|length > 0 %} <!-- if we have at least 1 gif to display... -->
 <!-- TODO: Make a for loop to loop over GIFs passed in from the server -->
-
+        {% for gif in gif_list %} <!-- loop through each gif_results passed from app.py -->
+            <img src= {{gif}} alt="OKOKKOKOKOK"> <!--shows the gif image-->
 <!-- TODO: For each gif, include the 'gif.html' template to display it -->
+        {% endfor %}
 
-{% for gif in gif_list %} <!-- loop through each gif_results passed from app.py -->
-    <img src= {{gif}} alt="OKOKKOKOKOK"> <!--shows the gif image-->
-{% endfor %}
+    {% else %} <!-- will only get executed if we receive no gif_list -->
+        <h1>No GIFs could be found. Try another search query.</h1>
+    {% endif %}
 
-    <h1>No GIFs could be found. Try another search query.</h1>
+</body>
 
 {% endblock %}

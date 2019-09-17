@@ -25,7 +25,11 @@
 {% for gifs in gifs %}
     {% include 'gif.html' %}
 {% endfor %}
-<img src="{{gif_str}}" alt="OKOKKOKOKOK"> <!--shows the gif image-->
+
+{% for gif in gif_list %} <!-- loop through each gif_results passed from app.py -->
+    <img src= {{gif}} alt="OKOKKOKOKOK"> <!--shows the gif image-->
+{% endfor %}
+
 {% if gifs|length == 0 %}
     <h1>No GIFs could be found. Try another search query.</h1>
 {% endif %}

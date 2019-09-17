@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request
 import requests
 import json
-#from pprint import pprint #pretty print json
+from pprint import pprint #pretty print json
 
 app = Flask(__name__)
 
@@ -18,22 +18,24 @@ def index():
     search_term = "excited" #test search
 
     #get our gifs and applying our parameters
-    r = requests.get("https://api.tenor.com/v1/search?q=%s&key=%s&limit=%s" % (search_term, apiKey, limit))
+    r = requests.get("https://api.tenor.com/v1/search?q=%s&key=%s&limit=%s" % (search_term, apiKey, limit)) #with limit
 
-
+    gif_list = []
     if r.status_code == 200:
-        #load the GIFs using the urls for the smaller GIF sizes
-        gif_json = r.json()
-        gif_str = gif_json["results"][0]["media"][0]["mediumgif"]["url"]
+        gif_json = r.json() #load the GIFs using the urls for the smaller GIF sizes
+        json_results = gif_json["results"]
+        for x in range(limit): #parse through each results
+            # pprint(json_result)
+            gif_str = json_results[x]["media"][0]["mediumgif"]["url"] #gives us url for each gifs
+            gif_list.append(
+                gif_str
+            )
 
-
-        
-        #pprint(gif_str)
-        
     else:
-        gif_str = None
+        gif_list = []
 
-    return render_template('index.html', gif_str = gif_str)
+    pprint(gif_list)
+    return render_template('index.html', gif_list = gif_list)
 
     # TODO: Make an API call to Tenor using the 'requests' library
 
@@ -52,4 +54,4 @@ def index():
 
 
 if __name__ == "__main__": #__name__ is main. But if we import this somewhere else, then the name will be the name of our module
-    app.run(debug=True) #This conditional is only true if we run this script directly
+    app.run(debug=True) #This conditional is only true if we run this script directly and in development only

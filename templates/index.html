@@ -34,11 +34,9 @@
 
 <!-- TODO: For each gif, include the 'gif.html' template to display it -->
 
-
 {% for gif in gif_list %} <!-- loop through each gif_results passed from app.py -->
     <img src= {{gif}} alt="OKOKKOKOKOK"> <!--shows the gif image-->
 {% endfor %}
-
 
     <h1>No GIFs could be found. Try another search query.</h1>
 {% endif %}

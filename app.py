@@ -15,8 +15,6 @@ def index():
 
     apiKey = "18F7OZJBE0WJ" #set the api key
     limit = request.args.get("limit") #set limit
-    if limit == None:
-        limit = 10
 
     search_term = request.args.get("search_result") #test search
     if search_term == "" or search_term == None or search_term == " ": #if we have no search then search randomly

@@ -21,13 +21,13 @@ p {
 }
 /*CSS styling for the search box*/
 form.input[type=text] {
-    background-image: blue;/*search box background color*/
-    align-content: center;/*position of search box on the page*/
+    background: blue;/*search box background color*/
+    align-items: center;/*position of search box on the page*/
 }
 /*CSS styling for the search button*/
 form.search button[type=submit] {
-    color: rgb(251, 255, 0);/*search button background color*/
-    align-content: center;/*position of the search button on the page*/
+    background: rgb(251, 255, 0);/*search button background color*/
+    align-items: center;/*position of the search button on the page*/
     cursor: pointer;/*cursor changes how it looks when it is hovering over the button*/
 }
 .grid{

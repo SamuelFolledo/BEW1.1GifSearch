@@ -21,9 +21,14 @@
 <!-- TODO: Make a for loop to loop over GIFs passed in from the server -->
 
 <!-- TODO: For each gif, include the 'gif.html' template to display it -->
-{% for gifs in gif_str %}<!--for statement to display gifs-->
+{% for gif in gifs %}<!--for statement to display gifs-->
     {% include 'gif.html' %}
 {% endfor %}
+
+{% for gif in gif_list %} <!-- loop through each gif_results passed from app.py -->
+    <img src= {{gif}} alt="OKOKKOKOKOK"> <!--shows the gif image-->
+{% endfor %}
+
 <img src="{{gif_str}}" alt="OKOKKOKOKOK"> <!--shows the gif image-->
 {% if gifs != query %} <!--if the gifs aren't in search query, prints that it can' be shown and to try another search.-->
     <h1>No GIFs could be found. Try another search query.</h1>

@@ -1,3 +1,28 @@
+## Requirements
+1) The page must use templates
+2) The page must display GIFs (10 at the most)
+3) GIFs should appear in a single vertical list
+4) At the top of the page there should be a page title
+5)Below the title there should be a search bar with a “Search” button near it (placement up to you, but needs to be on one side of the bar)
+6) Users should be able to type a string into the search bar, press the search button, and be shown up to 10 GIFs related to the search query
+7) GIFs should be displayed on a fresh load of the page, i.e. before a query has even been typed.
+8) GIFs should only update once a user has pressed the “Search” button
+9) If no GIFs could be found for the search term, display an error message saying that no GIFs could be found, and to try another search query
+10) The following elements should have some custom styling (i.e. CSS rules) added to them:
+    a. Page title
+    b. Search Bar
+    c. Search Button
+11) All code must be commented with a description of what the code is doing, expected input, and expected output
+## Stretch Requirements/Challenges (Optional)
+- Add a gitignore file and edit it so that “.DS_Store” and “.env” won’t get tracked in Git. What else shouldn't be tracked?
+- Center-align everything on the page
+- Display the GIFs in a grid instead of a list
+- Add a button that displays the top 10 trending GIFs on Tenor
+- Add a button that displays 10 random GIFs on Tenor
+- Type-ahead: as the user types in the search box, the page is reloading the gifs to match the search query in real time (no longer needing to click the search button)
+
+
+
 # How to Use This Starter Code
 
 To create your own repository using this code:

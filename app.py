@@ -14,8 +14,9 @@ def index():
     # TODO: Make 'params' dict with query term and API key
 
     apiKey = "18F7OZJBE0WJ" #set the api key
-    limit = request.args.get("limit") #set limit
-
+    limit = request.args.get("search_limit") #set limit
+    if limit == None:
+        limit = 10
     search_term = request.args.get("search_result") #test search
     if search_term == "" or search_term == None or search_term == " ": #if we have no search then search randomly
         search_term = "random"
@@ -26,6 +27,7 @@ def index():
     gif_list = []
     if r.status_code == 200:
         gif_json = r.json() #load the GIFs using the urls for the smaller GIF sizes
+        pprint(gif_json)
         json_results = gif_json["results"]
         for x in range(int(limit)): #parse through each results
             gif_str = json_results[x]["media"][0]["mediumgif"]["url"] #gives us url for each gifs
@@ -36,7 +38,7 @@ def index():
     else:
         gif_list = []
 
-    pprint(gif_list)
+    # pprint(gif_list)
     return render_template('index.html', gif_list = gif_list)
 
     # TODO: Make an API call to Tenor using the 'requests' library

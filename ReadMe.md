@@ -8,9 +8,9 @@
 7) GIFs should be displayed on a fresh load of the page, i.e. before a query has even been typed.
 8) GIFs should only update once a user has pressed the “Search” button
 9) If no GIFs could be found for the search term, display an error message saying that no GIFs could be found, and to try another search query
-10) The following elements should have some custom styling (i.e. CSS rules) added to them:
-    a. Page title
-    b. Search Bar
+10) The following elements should have some custom styling (i.e. CSS rules) added to them:</br>
+    a. Page title</br>
+    b. Search Bar</br>
     c. Search Button
 11) All code must be commented with a description of what the code is doing, expected input, and expected output
 ## Stretch Requirements/Challenges (Optional)

@@ -10,31 +10,36 @@
 <link rel="stylesheet"href="{{ url_for('static',filename='style.css') }}">
 <!-- TODO: Make an HTML form containing a search box and a submit button to add
     the search term to the query string -->
+<form action='/'> <!--allows for the HTML form to be created--> 
     <p>
-        Search GIFs
+        Search how many GIFs?
+    <select name="limit"> <!-- drop down called "limit" -->
+        <option value=1>1</option> <!-- left 1 is the actual data that will get passed, and 1 is what gets displayed -->
+        <option value=3>3</option>
+        <option value=5>5</option>
+        <option value=10 selected = "selected" >10</option> <!-- default selected is 10 -->
+        <option value=20>20</option>
+        <option value=30>30</option>
+        <option value=50>50</option>
+    </select>
     </p>  
-<form action='/gifs'> <!--allows for the HTML form to be created--> 
-    <input name ="query" type="query"placeholder="Search GIFs.."><!-- creates a search bar -->
+
+    <input name ="search_result" type="query"placeholder="Search GIFs.."><!-- creates a search bar -->
     <button type="submit">Search</button> <!-- creates a button called Search -->
+
+    
 
 </form>
 <!-- TODO: Make a for loop to loop over GIFs passed in from the server -->
 
 <!-- TODO: For each gif, include the 'gif.html' template to display it -->
-{% for gif in gifs %}<!--for statement to display gifs-->
-    {% include 'gif.html' %}
-{% endfor %}
-<<<<<<< HEAD
+
 
 {% for gif in gif_list %} <!-- loop through each gif_results passed from app.py -->
     <img src= {{gif}} alt="OKOKKOKOKOK"> <!--shows the gif image-->
 {% endfor %}
 
-{% if gifs|length == 0 %}
-=======
-<img src="{{gif_str}}" alt="OKOKKOKOKOK"> <!--shows the gif image-->
-{% if gifs != query %} <!--if the gifs aren't in search query, prints that it can' be shown and to try another search.-->
->>>>>>> 4fdeb89b05085b7ff7941c04c3ce98c96c242fbf
+
     <h1>No GIFs could be found. Try another search query.</h1>
 {% endif %}
 {% endblock %}

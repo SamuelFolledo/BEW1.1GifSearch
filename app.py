@@ -46,9 +46,9 @@ def index():
 
 
 
-#@app.route('/gifs')
-#def show_gifs():
-    #print("Hi gifs")
+@app.route('/gifs')
+def show_gifs():
+    print("Hi gifs")
 
 
 

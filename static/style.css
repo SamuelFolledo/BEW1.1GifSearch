@@ -28,7 +28,7 @@ form.input[type=text] {
 
 }
 /*CSS styling for the search button*/
-form.search button[type=submit] {
+form.button[type=submit] {
     background: rgb(251, 255, 0);/*search button background color*/
     align-items: center;/*position of the search button on the page*/
     cursor: pointer;/*cursor changes how it looks when it is hovering over the button*/
@@ -36,13 +36,6 @@ form.search button[type=submit] {
 }
 .grid{
     display: grid;
-    grid-template-columns: auto;
+    grid-template-columns: auto, auto, auto;
 
-}
-.tenor-gif {
-    margin: auto;
-    width: 250px;
-    height: 250px;
-    align-content: center;
-    
 }

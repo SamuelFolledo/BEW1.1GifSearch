@@ -10,14 +10,14 @@ body {
 /*CSS styling for the title text*/
 h1 {
     color: rgb(254, 0, 42);/*title text color*/
-    font-size: 50px;
+    font-size: 50px;/*changes how big the text is*/
     font-family: 'Times New Roman', Times, serif;/*text font*/
     text-align: center;/*position of the title on the page*/
 
 }
 h2 {
     color: rgb(254, 0, 220);/*title text color*/
-    font-size: 24px;
+    font-size: 24px;/*changes how big the text is*/
     font-family: 'Times New Roman', Times, serif;/*text font*/
     text-align: center;/*position of the title on the page*/ 
 }
@@ -25,21 +25,27 @@ h2 {
 /*CSS styling for the printed text "GIF Search*/
 p {
     color: rgb(94, 255, 0);/*text color*/
-    font-size: 20px;
+    font-size: 20px;/*changes how big the text is*/
     font-family: 'Times New Roman', Times, serif;/*text font*/
     text-align: center;/*positon of the "GIF search" text on the page*/
 
 }
 /*CSS styling for the search box*/
 input {
-    font-size: 18px;
-    text-align: center;/*position of search box on the page*/
+    font-size: 18px;/*changes how big the text is*/
+    margin-left: 350px;/*position of search bar on page*/
+    margin-right: 350px;/*position of search bar on page*/
+    text-align: center;/*position of text in the search box*/
 
 }
 /*CSS styling for the search button*/
 button {
-    font-size: 18px;
-    text-align: center;/*position of the search button on the page*/
+    font-size: 18px;/*changes how big the text is*/
+    margin-top: -27px;/*position of search button on page*/
+    margin-bottom: 50px;/*position of search button on page*/
+    margin-left: 550px;/*position of search button on page*/
+    margin-right: 550px;/*position of search button on page*/
+    text-align: center;/*position of the text in the search button*/
 
 }
 .grid{

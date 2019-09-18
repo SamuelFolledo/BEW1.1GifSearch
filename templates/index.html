@@ -11,31 +11,31 @@
 {% endblock %}
 
 {% block content %}
-<body>
+
+<body> 
     <!-- TODO: Make an HTML form containing a search box and a submit button to add
         the search term to the query string -->
-    <form action='/'> <!--allows for the HTML form to be created--> 
-        <p>
-            Search how many GIFs?
-        <select name="search_limit"> <!-- drop down called "limit" -->
-            <option value=1>1</option> <!-- left 1 is the actual data that will get passed, and 1 is what gets displayed -->
-            <option value=2>2</option>
-            <option value=3>3</option>
-            <option value=4>4</option>
-            <option value=5>5</option>
-            <option value=6>6</option>
-            <option value=7>7</option>
-            <option value=8>8</option>
-            <option value=9>9</option>
-            <option value=10 selected = "selected" >10</option> <!-- default selected is 10 -->
-        </select>
-        </p>  
+    <form action='/'> <!--allows for the HTML form to be created-->
+             <p>
+                 Search how many GIFs?
+                    <select name="search_limit"> <!-- drop down called "limit" -->
+                    <option value=1>1</option> <!-- left 1 is the actual data that will get passed, and 1 is what gets displayed -->
+                    <option value=2>2</option>
+                    <option value=3>3</option>
+                    <option value=4>4</option>
+                    <option value=5>5</option>
+                    <option value=6>6</option>
+                    <option value=7>7</option>
+                    <option value=8>8</option>
+                    <option value=9>9</option>
+                    <option value=10 selected = "selected" >10</option> <!-- default selected is 10 -->
+            </select>
+            </p>  
 
-        <input type="text" name ="search_result" value = "{{search_result}}" placeholder="Search GIFs.."><!-- creates a search bar -->
-        <button type="submit">Search</button> <!-- creates a button called Search -->
-    </form>
-
-    
+            <input type="text" name ="search_result" value = "{{search_result}}" placeholder="Search GIFs.."><!-- creates a search bar -->
+            <button type="submit">Search</button> <!-- creates a button called Search -->
+        </style>
+    </form>   
     {% if gif_list|length > 0 %} <!-- if we have at least 1 gif to display... -->
 <!-- TODO: Make a for loop to loop over GIFs passed in from the server -->
         {% for gif in gif_list %} <!-- loop through each gif_results passed from app.py -->
@@ -45,8 +45,7 @@
 
     {% else %} <!-- will only get executed if we receive no gif_list -->
         <h2>No GIFs could be found. Try another search query.</h2>
-    {% endif %}
-
+    {% endif %} 
 </body>
-
+<script type="text/javascript" async src="https://tenor.com/embed.js"></script>
 {% endblock %}

@@ -14,6 +14,11 @@ h1 {
     text-align: center;/*position of the title on the page*/
 
 }
+h2 {
+    color: rgb(254, 0, 220);/*title text color*/
+    font-family: 'Times New Roman', Times, serif;/*text font*/
+    text-align: center;/*position of the title on the page*/ 
+}
 /*CSS styling for the printed text "GIF Search*/
 p {
     color: rgb(94, 255, 0);/*text color*/

@@ -9,25 +9,38 @@ body {
 }
 /*CSS styling for the title text*/
 h1 {
-    color: purple;/*title text color*/
-    font-family: 'Times New Roman', Times, serif;/**/
+    color: rgb(254, 0, 42);/*title text color*/
+    font-family: 'Times New Roman', Times, serif;/*text font*/
     text-align: center;/*position of the title on the page*/
+
+}
+h2 {
+    color: rgb(254, 0, 220);/*title text color*/
+    font-family: 'Times New Roman', Times, serif;/*text font*/
+    text-align: center;/*position of the title on the page*/ 
 }
 /*CSS styling for the printed text "GIF Search*/
 p {
-    color: darkred;/*text color*/
+    color: rgb(94, 255, 0);/*text color*/
     font-family: 'Times New Roman', Times, serif;/*text font*/
     text-align: center;/*positon of the "GIF search" text on the page*/
+
 }
 /*CSS styling for the search box*/
-.box{
-    background-image: blue;/*search box background color*/
-    text-align: center;/*position of search box on the page*/
+form.input[type=text] {
+    background: blue;/*search box background color*/
+    align-items: center;/*position of search box on the page*/
+
 }
 /*CSS styling for the search button*/
-.button{
-    color: seagreen;/*search button background color*/
-    text-align: center;/*position of the search button on the page*/
+form.button[type=submit] {
+    background: rgb(251, 255, 0);/*search button background color*/
+    align-items: center;/*position of the search button on the page*/
     cursor: pointer;/*cursor changes how it looks when it is hovering over the button*/
+
+}
+.grid{
+    display: grid;
+    grid-template-columns: auto, auto, auto;
 
 }

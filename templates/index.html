@@ -31,7 +31,7 @@
         </select>
         </p>  
 
-        <input name ="search_result" value = "{{search_result}}" type="query"placeholder="Search GIFs.."><!-- creates a search bar -->
+        <input type="text" name ="search_result" value = "{{search_result}}" placeholder="Search GIFs.."><!-- creates a search bar -->
         <button type="submit">Search</button> <!-- creates a button called Search -->
     </form>
 
@@ -44,7 +44,7 @@
         {% endfor %}
 
     {% else %} <!-- will only get executed if we receive no gif_list -->
-        <h1>No GIFs could be found. Try another search query.</h1>
+        <h2>No GIFs could be found. Try another search query.</h2>
     {% endif %}
 
 </body>

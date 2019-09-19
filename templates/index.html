@@ -4,7 +4,7 @@
 
 <h1><!--title for the GIF Search-->
     <head>
-        <link rel = "stylesheet" href = "/static/style.css">
+            <link rel = "stylesheet" href = "/static/style.css">
     </head>
     GIF Search
 </h1>
@@ -16,7 +16,7 @@
     <!-- TODO: Make an HTML form containing a search box and a submit button to add
         the search term to the query string -->
     <form action='/'> <!--allows for the HTML form to be created-->
-             <p>
+        <p>
                  Search how many GIFs?
                     <select name="search_limit"> <!-- drop down called "limit" -->
                     <option value=1>1</option> <!-- left 1 is the actual data that will get passed, and 1 is what gets displayed -->
@@ -30,9 +30,12 @@
                     <option value=9>9</option>
                     <option value=10 selected = "selected" >10</option> <!-- default selected is 10 -->
             </select>
-            </p>  
             <input type="text" name ="search_result" value = "{{search_result}}" placeholder="Search GIFs.."><!-- creates a search bar -->
             <button type="submit">Search</button> <!-- creates a button called Search -->
+         </p>  
+            <ul>
+                <li><a href=app.py></a></li>
+            </ul>
         </style>
     </form>   
     {% if gif_list|length > 0 %} <!-- if we have at least 1 gif to display... -->

@@ -1,6 +1,6 @@
 /*CSS styling for the page background*/
 body {
-    background:#333333;/*background color*/
+    background:rgb(1, 77, 101);/*background color*/
     margin: auto;/*how big the body is*/
     padding: 0;/*how big the body is*/
     width: 100%;
@@ -33,18 +33,17 @@ p {
 /*CSS styling for the search box*/
 input {
     font-size: 18px;/*changes how big the text is*/
-    margin-left: 525px;/*position of search bar on page*/
-    margin-right: 525px;/*position of search bar on page*/
+    
     text-align: center;/*position of text in the search box*/
 
 }
 /*CSS styling for the search button*/
 button {
     font-size: 18px;/*changes how big the text is*/
-    margin-top: -27px;/*position of search button on page*/
-    margin-bottom: 50px;/*position of search button on page*/
-    margin-left: 725;/*position of search button on page*/
-    margin-right: 725px;/*position of search button on page*/
+   
     text-align: center;/*position of the text in the search button*/
 
+}
+li {
+    display: table-column;
 }

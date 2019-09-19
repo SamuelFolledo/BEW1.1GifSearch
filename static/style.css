@@ -33,8 +33,8 @@ p {
 /*CSS styling for the search box*/
 input {
     font-size: 18px;/*changes how big the text is*/
-    margin-left: 350px;/*position of search bar on page*/
-    margin-right: 350px;/*position of search bar on page*/
+    margin-left: 525px;/*position of search bar on page*/
+    margin-right: 525px;/*position of search bar on page*/
     text-align: center;/*position of text in the search box*/
 
 }
@@ -43,13 +43,8 @@ button {
     font-size: 18px;/*changes how big the text is*/
     margin-top: -27px;/*position of search button on page*/
     margin-bottom: 50px;/*position of search button on page*/
-    margin-left: 550px;/*position of search button on page*/
-    margin-right: 550px;/*position of search button on page*/
+    margin-left: 725;/*position of search button on page*/
+    margin-right: 725px;/*position of search button on page*/
     text-align: center;/*position of the text in the search button*/
-
-}
-.grid{
-    display: grid;
-    grid-template-columns: auto, auto, auto;
 
 }

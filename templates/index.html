@@ -8,6 +8,7 @@
     </head>
     GIF Search
 </h1>
+
 {% endblock %}
 
 {% block content %}
@@ -29,16 +30,17 @@
                     <option value=8>8</option>
                     <option value=9>9</option>
                     <option value=10 selected = "selected" >10</option> <!-- default selected is 10 -->
-            </select>
-            <input type="text" name ="search_result" value = "{{search_result}}" placeholder="Search GIFs.."><!-- creates a search bar -->
-            <button type="submit">Search</button> <!-- creates a button called Search -->
-         </p>  
+                     </select>
+                <input type="text" name ="search_result" value = "{{search_result}}" placeholder="Search GIFs.."><!-- creates a search bar -->
+                <button type="submit">Search</button> <!-- creates a button called Search -->
+            </p>  
         </style>
     </form>   
     {% if gif_list|length > 0 %} <!-- if we have at least 1 gif to display... -->
 <!-- TODO: Make a for loop to loop over GIFs passed in from the server -->
         {% for gif in gif_list %} <!-- loop through each gif_results passed from app.py -->
-            <img src= {{gif}} alt="OKOKKOKOKOK"> <!--shows the gif image-->
+            <ul class="gif"></ul> <!--forms the gifs into a vertical list-->
+                <img src= {{gif}} alt="OKOKKOKOKOK"> <!--shows the gif image-->
 <!-- TODO: For each gif, include the 'gif.html' template to display it -->
         {% endfor %}
 

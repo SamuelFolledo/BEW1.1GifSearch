@@ -33,20 +33,16 @@ p {
 /*CSS styling for the search box*/
 input {
     font-size: 18px;/*changes how big the text is*/
-    
     text-align: center;/*position of text in the search box*/
 
 }
 /*CSS styling for the search button*/
 button {
     font-size: 18px;/*changes how big the text is*/
-   
     text-align: center;/*position of the text in the search button*/
 
 }
-.tenor-gif-embed {
-    margin: auto;
-    width: 500px;
-    height: 500px;
-    align-content: center;
+ul.gifs {
+    margin-left: auto;
+    margin-right: auto;
 }

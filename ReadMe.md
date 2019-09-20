@@ -1,3 +1,16 @@
+# GIF Search Project
+
+![Gif Screenshot](/screenshot.png)
+
+## About
+This Gif search project displays randomized gifs from [Tenors](https://tenor.com) API on the home page. The amount of Gifs displayed is defaulted at 10 but can be change by utilizing a **drop down**. The default searched results is random but the **search bar** can also be used to find a specific Gifs. Feel free to use and download any gifs using our site created with [Tenor's](https://tenor.com/gifapi/documentation#quickstart) API, Flask, and Jinja templates.
+
+
+## Authors
+* **Samuel P. Folledo and Padyn Riddell** - [Padyn's GitHub](https://github.com/squeaky1273)
+
+
+
 ## Requirements
 1) The page must use templates
 2) The page must display GIFs (10 at the most)
@@ -57,3 +70,5 @@ You may find the following resources helpful in your development process:
 1. [BEW 1.1 Lesson on Flask](https://make-school-courses.github.io/BEW-1.1-RESTful-and-Resourceful-MVC-Architecture/#/./Lessons/03-Intro-to-Flask/README)
 1. [BEW 1.1 Lesson on Templates](https://make-school-courses.github.io/BEW-1.1-RESTful-and-Resourceful-MVC-Architecture/#/./Lessons/04-Flask-Templating/README)
 1. [BEW 1.1 Lesson on APIs](https://make-school-courses.github.io/BEW-1.1-RESTful-and-Resourceful-MVC-Architecture/#/./Lessons/05-URLs-HTTP-REST-and-Reading-Errors/README)
+
+# Shout out to Dani for being the best Back End instructor!!!

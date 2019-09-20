@@ -1,10 +1,9 @@
 # GIF Search Project
 
-![Gif Screenshot](/screenshot.png)
-
 ## About
-This Gif search project displays randomized gifs from [Tenors](https://tenor.com) API on the home page. The amount of Gifs displayed is defaulted at 10 but can be change by utilizing a **drop down**. The default searched results is random but the **search bar** can also be used to find a specific Gifs. Feel free to use and download any gifs using our site created with [Tenor's](https://tenor.com/gifapi/documentation#quickstart) API, Flask, and Jinja templates.
+This Gif search project displays randomized gifs from [Tenor's](https://tenor.com) API on the home page. The amount of Gifs displayed is defaulted at 10 but can be change by utilizing a **drop down**. The default searched results is random but the **search bar** can also be used to find a specific Gifs. Feel free to use and download any gifs using our site created with [Tenor's](https://tenor.com/gifapi/documentation#quickstart) API, Flask, and Jinja templates.
 
+![Gif Screenshot](/screenshot.png)
 
 ## Authors
 * **Samuel P. Folledo and Padyn Riddell** - [Padyn's GitHub](https://github.com/squeaky1273)

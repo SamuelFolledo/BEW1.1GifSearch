@@ -2,10 +2,13 @@ from flask import Flask, render_template, request
 import requests
 import json
 from pprint import pprint #pretty print json
+import os #needed for .env
+from dotenv import load_dotenv #needed for .env
+load_dotenv() #needed for .env
 
 app = Flask(__name__)
 
-apiKey = "18F7OZJBE0WJ" #set the api key
+TENOR_API_KEY = os.getenv("TENOR_API_KEY") #set the api key #get it from our invisible .ENV file
 
 @app.route("/") #Home Page #ROUTES are what we type in the browser into browser to go to different pages. We create these using ROUTE DECORATORS, which is a way to add additional functionalities to existing functions. This route decorator will handle all of the complicated backend stuff and simply allow us to write a function that returns the information that will be shown in our website
 @app.route("/home") #will access our home page via / or /home
@@ -13,7 +16,7 @@ def index(): #homepage
     limit = request.args.get("search_limit",10) #set limit, if none then put 10
     search_term = request.args.get("search_result", "random") #search_term will contain search_result, else it will be random
     
-    gif_json = get_gif_json(search_term, apiKey, limit)
+    gif_json = get_gif_json(search_term, TENOR_API_KEY, limit)
 
     gif_list = get_gifs_list(gif_json)
 
